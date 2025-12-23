@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: stock-trading-client
+  grpc:
+    client:
+      channels:
+        stockService:
+          address: "static://localhost:9090"
+          negotiation-type: "PLAINTEXT"
